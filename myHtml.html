@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    
+    <title>Document</title>
+</head>
+<body id="home">
+    <header id="head">
+        <h2 class="h2" id="h2">Header</h2>
+        <nav>
+            <button id="drop1" href="#" class="link btn-info">Drop 1</button>
+            <button id="drop2" href="#" class="link btn-info">Drop 2</button>
+            <button id="drop3" href="#" class="link btn-info">Drop 3</button>
+        </nav>
+    </header>
+    <main id="main">
+        <article id="article">
+            Article
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#section1">Section 1</button>
+            <section id="section1" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </section>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#section2">Section 2</button>
+            <section id="section2" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </section>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#section3">Section 3</button>
+            <section id="section3" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </article>
+        <aside id="aside">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </aside>
+    </main>
+    <footer id="foot">
+        <a href="#home" id="black">Change color</a>
+    </footer>
+    <script>
+        $("#black").on("click",negativeColors);
+        $('.link').on("click",dropDown);
+    </script>
+</body>
+</html>

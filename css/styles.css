@@ -1,0 +1,77 @@
+:root{
+    display: table;
+    margin: auto;
+    font-weight: bold;
+    max-width: 500px;
+    color:rgb(0, 0, 0);
+}
+body :not(header) :not(h2){
+    text-indent: 5%;
+}
+body{
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px;
+    
+}
+main{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+header{
+    background-color: rgb(127, 219, 255);
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+section{
+    border: 2px solid black;
+    background-color: rgb(255, 165, 0);
+}
+aside{
+    border: 1px solid black;
+    background-color: blueviolet;
+    color:rgb(255, 255, 255)
+}
+nav{
+    border: 1px solid black;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 181, 255);
+    color: rgb(0, 0, 0);
+}
+
+footer{
+    background-color: rgb(127, 219, 255);
+}
+
+.btn{
+    font-size: 130%;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 165, 0);
+}
+
+.btn:hover{
+    background-color: rgb(255, 210, 128);
+}
+
+a{
+    min-width: 100px;
+}
+
+.link{
+    background-color: rgb(127, 255, 212);
+    color: black;
+}
+
+.link:hover{
+    background-color: rgb(27, 122, 91);
+}

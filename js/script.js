@@ -1,18 +1,6 @@
 function negativeColors(){
   let elements = document.getElementById("home").getElementsByTagName('*');
 
-  /*
-  console.log(window.getComputedStyle(document.getElementById("h2")).color);
-  let h2 = document.getElementById("h2");
-  let h2Comp = window.getComputedStyle(h2);
-  let h2Colors = h2Comp.color.split(", ");
-  h2Colors[0] = h2Colors[0].substring(4,h2Colors[0].length);
-  h2Colors[2] = h2Colors[2].substring(0,h2Colors[2].length-1);
-  for (let i = 0; i<h2Colors.length; i++){
-    h2Colors[i] = String(255-Number(h2Colors[i]));
-    h2.style.color = `rgb(${h2Colors[0]},${h2Colors[1]},${h2Colors[2]})`;
-  }
-    */
   for (let element of elements){
 
     let computed = window.getComputedStyle(element);
@@ -37,8 +25,6 @@ function negativeColors(){
     }
   }
 
-  
-  
 }
   
 

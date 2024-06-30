@@ -9,7 +9,7 @@ function negativeColors(){
     colorsArr[2] = colorsArr[2].substring(0,colorsArr[2].length-1);
     for (let i = 0; i<colorsArr.length; i++){
       colorsArr[i] = String(255-Number(colorsArr[i]));
-      element.style.backgroundColor = `rgb(${colorsArr[0]},${colorsArr[1]},${colorsArr[2]})`;
+      element.style.backgroundColor = `rgb(${colorsArr.join(",")})`;
     }
   }
   for (let element of elements){
@@ -21,7 +21,7 @@ function negativeColors(){
     for (let i = 0; i<textColorsArr.length; i++){
       textColorsArr[i] = String(255-Number(textColorsArr[i]));
     }
-    element.style.color = `rgb(${textColorsArr[0]},${textColorsArr[1]},${textColorsArr[2]})`; 
+    element.style.color = `rgb(${textColorsArr.join(",")})`; 
     }
   }
 
